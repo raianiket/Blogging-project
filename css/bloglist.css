@@ -1,24 +1,19 @@
-.post {
-    position: relative;
-    width: 90%;
-    height: 20%;
-    background: #fff;
-    box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
-    margin: 10px 10px 10px 20px;
-    float:left;
-    border-radius: 15px;
+.middleText {
+    color: white;
 }
 .post-left {
-        width: 5%;            
+        width: 10%;            
         max-width: 15%;
+        border-radius: 15px 0 0 15px;
         display: table-cell;
         vertical-align: middle;
         text-align: center;
         font-weight: bold;
+        background-color: white;
         color: #000;
 }
 .post-content {
-        width: 55%;           
+        width: 65%;           
         display: table-cell;
         text-align: left;
         background-color: #E8E8E8;
@@ -47,7 +42,7 @@
     margin-bottom: 0 !important;
 }
 
-body {
+.body {
     height: 100%;
     width: 100%;
     position: relative;
@@ -56,13 +51,51 @@ body {
     background-color: orange;
     background-size: 2000% 2000%;
 }
-.allPostsContainer {
+.container {
     height: 100%;
-    width: 50%;
+    width: 100%;
     /* display: grid; */
 	padding-left: 10%;
 	padding-right: 5%;
 }
+.imagee {
+    height: 20px;
+    width: 20px;
+    float: right;
+    margin-top: 10px;
+}
+.popup {
+    display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 200px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.popup-content {
+  background-color: #fefefe;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+}
+.dot {
+    font-size: 20px;
+    float: right;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
 .hidden{
     visibility: hidden;
 }
+@media(max-width:1050px){
+.resize{
+    visibility: hidden;
+}}
