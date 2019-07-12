@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+        
+        <link href='..\css\post.css' rel='stylesheet' type='text/css'>
+        <link href='..\css\header.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
+        <link href='..\css\font.css' rel='stylesheet' type='text/css'>
+    <style>        
+    </style>     
+</head>
+<body>
+       <div id="main-container-div">
+        <div class="header">
+                <button class="topButtons" onclick="document.getElementById('openSignUp').style.display='block'" style="width:auto;">Sign Up</button>   
+                <button class="topButtons" onclick="document.getElementById('openSignIn').style.display='block'" style="width:auto;">Sign In</button>                               
+                <a id="pageTitle" class="logo-title">ScriBBler</a><br><br>
+                <p class="middleText">Explore, Imagine, Create</p>
+                                
+            <!-- Insert code for Sign Up, Sign In button here. 
+                 Add code for "ScriBBler" heading and the sub-heading -->
+
+        </div>
+       </div>
+
+    <div id="openSignUp" class="modal"> 
+            <span onclick="document.getElementById('openSignUp').style.display='none'" class="close" title="Close Modal">×</span> 
+            <div class="container"> 
+                <form class="modal-content" action="#"> 
+                    <div id="heading-center">
+                        <h2>Get Started</h2>
+                    </div><hr>
+                    <label>Full Name</label><br>
+                    <input type="text" placeholder="Enter Full Name" required><br>
+                    <label></label>Username</label> <br>
+                    <input type="text" placeholder="Enter Username"  required><br> 
+                
+                    <label>Password</label> <br>
+                    <input type="password" placeholder="Enter Password" name="psw" required> <br>
+                
+                    <label>Confirm Password</label> <br>
+                    <input type="password" placeholder="Confirm Password" name="psw-repeat" required> <br>
+                      <button type="submit">Sign Up</button> 
+                </form> 
+            </div>
+            <!-- Insert code for Sign In modal here -->
+
+    </div> 
+    <div id="openSignIn" class="modal"> 
+        <span onclick="document.getElementById('openSignIn').style.display='none'" class="close" title="Close Modal">×</span> 
+        <div class="container"> 
+            <form class="modal-content" action="#"> 
+                <div id="heading-center">
+                    <h2>Welcome Back!</h2>
+                </div><hr>
+                <label></label>Username</label> <br>
+                <input type="text" placeholder="Enter Username"  required><br> 
+            
+                <label>Password</label> <br>
+                <input type="password" placeholder="Enter Password" name="psw" required> <br>
+                  <button type="submit">Sign In</button> 
+                  <p style="text-align: center;">Not a member ? <a style="color: blue;cursor: pointer;font-weight: bold;" onclick="document.getElementById('openSignIn').style.display='none'
+                    document.getElementById('openSignUp').style.display='block'">Sign Up</a></p>
+            </form> 
+        </div>
+        <!-- Insert code for Sign Up modal here -->
+    </div> 
+
+    <div class="blogContent">
+        <div id="blogTitle" class="blogTite">
+        <h id="blogTitleNew">The legacy of Jimi Hendrix</h>
+    </div>
+
+<div class="blogAuthor">
+
+    <!-- Insert code for Edit/Save button and  -->
+
+    <br>Jimi
+    <button id="edit" onclick="edit()">Edit<img src="./img/box_edit-512.png" class="image"></button><br><br>
+    <button id="save" onclick="save()">Save<img src="./img/box_edit-512.png" class="image"></button>
+</div>
+
+<div class="blogText">
+    <p id="blogBodyy">
+            Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously undesirable technique of guitar amplifier feedback, and helped to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[349] He applied this technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's left hand would play and the other fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords and lead lines together, giving the audio impression that more than one guitarist was performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb 42] Aledort wrote: "In rock guitar, there are but two eras � before Hendrix and after Hendrix."
+    </p>
+</div>
+<div class="blogAuthor">
+    <button class="buttons" id="like" onclick="like()"><img src="./img/459-01-512.png" class="image">Like</button><br><br>
+    <button id="liked" onclick="liked()"><img src="./img/459-01-512.png" class="image">Liked</button>
+</div>
+<div class="contentt">
+    <p id="beforeLike">Be the first one to like this!</p>
+    <textarea id="comment" placeholder="Leave a comment..." class="textarea"></textarea>
+    <button class="buttons" onclick="newComment()">Comments:</button><br><br>
+</div>
+<br><br><h3>All comments:</h3>
+<div id="showComment">
+    <NOBR></NOBR>
+</div>
+    <!-- Insert code for Like button, Comment button, Comment box here-->
+
+    <script src="..\js\post.js" defer></script>
+    <script src="..\js\header.js">             
+    </script>
+    
+</body>
